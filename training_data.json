@@ -1,0 +1,78 @@
+{
+    "Reminder: Invoice from Kathryn Fulton Consulting Inc.": {
+        "action": "archive",
+        "reason": "ap@madkudu.com will be replying to these",
+        "sender": "\"Kathryn Fulton Consulting Inc.\" <quickbooks@notification.intuit.com>",
+        "recipients": [
+            "francis@madkudu.com",
+            "ap@madkudu.com"
+        ],
+        "cc_list": [
+            "kathrynfultonconsulting@accountingagency.co"
+        ]
+    },
+    "[Amplitude] MadKudu weekly data health summary": {
+        "action": "ignore",
+        "reason": "I am not interested in reading these weekly summaries",
+        "sender": "Amplitude <noreply@amplitude.com>",
+        "recipients": [
+            "francis@madkudu.com"
+        ],
+        "cc_list": []
+    },
+    "always_ignore_senders": [
+        "Jesus Requena via LinkedIn <messaging-digest-noreply@linkedin.com>",
+        "MO Pros <engage@xpertly.ai>",
+        "Peterson Conway <pconway@substack.com>"
+    ],
+    "Jesus just messaged you": {
+        "action": "ignore",
+        "reason": "this is a product notification",
+        "sender": "Jesus Requena via LinkedIn <messaging-digest-noreply@linkedin.com>",
+        "recipients": [
+            "Francis Brero <francis@madkudu.com>"
+        ],
+        "cc_list": []
+    },
+    "Marketing Ops Professionals - Personalized summaries": {
+        "action": "ignore",
+        "reason": "this is a newsletter I did not subscribe to",
+        "sender": "MO Pros <engage@xpertly.ai>",
+        "recipients": [
+            "francis@madkudu.com"
+        ],
+        "cc_list": []
+    },
+    "HG Insights Feed - October 2024 Madkudu": {
+        "action": "ignore",
+        "reason": "this is a product update email",
+        "sender": "\"'HG Insights Delivery' via MadKudu Product\" <product@madkudu.com>",
+        "recipients": [
+            "product@madkudu.com",
+            "engineering@madkudu.com"
+        ],
+        "cc_list": [
+            "hayden.smith@hginsights.com",
+            "brett.castonguay@hginsights.com",
+            "tyler.neubauer@hginsights.com"
+        ]
+    },
+    "Freedom to the Form": {
+        "action": "ignore",
+        "reason": "this is a newsletter I did not subscribe to",
+        "sender": "Peterson Conway <pconway@substack.com>",
+        "recipients": [
+            "francis@madkudu.com"
+        ],
+        "cc_list": []
+    },
+    "Follow Up Task": {
+        "action": "reply",
+        "reason": "Urgent task to follow up",
+        "sender": "test_sender@example.com",
+        "recipients": [
+            "francis@domain.com"
+        ],
+        "cc_list": []
+    }
+}
