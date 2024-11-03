@@ -2,7 +2,7 @@ import openai
 import json
 
 class LLMHelper:
-    def __init__(self, model_choice="gpt-4"):
+    def __init__(self, model_choice="gpt-4-turbo"):
         # Load configuration from the OAI_CONFIG_LIST file
         with open('OAI_CONFIG_LIST', 'r') as file:
             config = json.load(file)

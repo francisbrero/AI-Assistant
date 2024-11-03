@@ -1,5 +1,5 @@
 {
-    "follow_up": "Hi {recipient_name},\n\nI wanted to follow up on our previous conversation about {topic}. Please let me know if you need further information or if we can schedule a time to discuss.\n\nBest regards,\n{your_name}",
-    "meeting_request": "Dear {recipient_name},\n\nI hope this message finds you well. I would like to schedule a meeting with you to discuss {topic}. Please let me know your availability.\n\nBest regards,\n{your_name}",
-    "status_update": "Hi {recipient_name},\n\nHere’s a quick update on the current status of {project}. {update_details}\n\nBest regards,\n{your_name}"
+    "follow_up": "Hi {recipient_name},\n\nI wanted to follow up on our previous conversation about {topic}. Please let me know if you need further information or if we can schedule a time to discuss.\n\nCheers,\n{your_name}",
+    "meeting_request": "Hi {recipient_name},\n\nI hope this message finds you well. I would like to schedule a meeting with you to discuss {topic}. Please let me know your availability.\n\nCheers,\n{your_name}",
+    "status_update": "Hi {recipient_name},\n\nHere’s a quick update on the current status of {project}. {update_details}\n\nCheers,\n{your_name}"
 }

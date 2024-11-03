@@ -65,5 +65,14 @@
             "francis@madkudu.com"
         ],
         "cc_list": []
+    },
+    "Follow Up Task": {
+        "action": "reply",
+        "reason": "Urgent task to follow up",
+        "sender": "test_sender@example.com",
+        "recipients": [
+            "francis@domain.com"
+        ],
+        "cc_list": []
     }
 }

@@ -7,7 +7,7 @@ from utilities.llm_helper import LLMHelper
 colorama.init(autoreset=True)  # Initialize colorama
 
 class EmailAgent:
-    def __init__(self, training_mode=False, model_choice="gpt-4"):
+    def __init__(self, training_mode=False, model_choice="gpt-4-turbo"):
         self.gmail = GmailIntegration()
         self.training_mode = training_mode
         self.llm_helper = LLMHelper(model_choice=model_choice)

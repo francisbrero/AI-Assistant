@@ -2,7 +2,7 @@ import openai
 import json
 
 class EmailDraftingAgent:
-    def __init__(self, model_choice="gpt-4"):
+    def __init__(self, model_choice="gpt-4-turbo"):
         # Load the OpenAI model and any specific templates or instructions
         self.model_choice = model_choice
         self.templates = self.load_templates()
