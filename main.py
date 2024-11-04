@@ -1,5 +1,5 @@
 import argparse
-from agents.email_agent import EmailAgent
+from email_agents.email_agent import EmailAgent
 
 def main(training=False, model="gpt-4"):
     # Initialize Email Agent with training mode and selected model
