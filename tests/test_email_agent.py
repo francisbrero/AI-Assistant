@@ -3,8 +3,8 @@ import os
 import unittest
 from unittest.mock import patch, MagicMock
 
-# Ensure the parent directory is in the Python path to access agents and integration
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'agents')))
+# Ensure the parent directory is in the Python path to access email_agents and integration
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'email_agents')))
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'integration')))
 
 from email_agent import EmailAgent

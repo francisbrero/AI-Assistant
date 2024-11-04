@@ -3,7 +3,7 @@
 ## Overview
 
 The AI Executive Assistant system is designed to help streamline workflow management for executives by automating various routine tasks such as email management, contact organization, calendar scheduling, and personal task tracking. 
-The system comprises multiple specialized agents, each focusing on a specific aspect of workflow management and is managed by a central Coordinator Agent. The main features include:
+The system comprises multiple specialized email_agents, each focusing on a specific aspect of workflow management and is managed by a central Coordinator Agent. The main features include:
 
 - Email Management: Automate triaging (deleting, unsubscribing, archiving) and drafting responses using NLP.
 
@@ -17,7 +17,7 @@ The system comprises multiple specialized agents, each focusing on a specific as
 
 The system features a Streamlit-based dashboard that allows user interaction, providing a centralized place for reviewing agent activities, approving actions, and managing tasks.
 
-## Project Structure
+
 
 ## Installation
 
@@ -31,70 +31,71 @@ The system features a Streamlit-based dashboard that allows user interaction, pr
 
 ### Setup Instructions
 
-Clone the Repository:
-
 Set Up Virtual Environment:
+
+```bash
+python -m venv venv
+source venv/bin/activate
+```
 
 Install Dependencies:
 
+```bash
+pip install -r requirements.txt
+```
+
 Set Up API Credentials:
+
+1. Credentials for Google Workspace API:
 
 Create a file called credentials.json for Google Workspace access and place it in the root directory.
 
-Update LinkedIn credentials as required for the session cookie.
-
-Run the Dashboard:
-
-Usage
-```bash 
-python main.py -model gpt-4-turbo -training
+```bash
+touch credentials.json
 ```
 
 
-Starting the System
+Update LinkedIn credentials as required for the session cookie.
 
-Dashboard Interface: The dashboard provides options for initiating tasks such as email triage, LinkedIn message handling, and scheduling personal appointments. The Coordinator Agent manages the workflow between agents.
+## Using the System:
 
-Agents and Tasks
+To run the system, execute the following command:
 
-Email Agent: Handles the triaging of emails, identifies important messages, and drafts replies. This agent can automatically archive or delete promotional content.
+```bash
+python run main.py
+```
 
-LinkedIn Agent: Accesses LinkedIn messages through session cookies to triage and draft responses.
+## email_agents and Tasks
 
-Contact Management Agent: Extracts contacts from multiple sources and maintains them in a central database for easy access and categorization.
+- Email Agent: Handles the triaging of emails, identifies important messages, and drafts replies. This agent can automatically archive or delete promotional content.
+More details on training and running the email agent can be found in the [email agent documentation](email_agents/email_agent_readme.md).
 
-Calendar Agent: Connects with Google Calendar API to schedule meetings and personal tasks efficiently.
+- LinkedIn Agent: Accesses LinkedIn messages through session cookies to triage and draft responses.
 
-Security & Privacy
+- Contact Management Agent: Extracts contacts from multiple sources and maintains them in a central database for easy access and categorization.
 
-Sensitive Data Handling: Sensitive data such as Social Security Numbers are handled using placeholder tokens, and encryption techniques are used for storage and transmission (AES-256).
+- Calendar Agent: Connects with Google Calendar API to schedule meetings and personal tasks efficiently.
 
-Encryption: Custom utility scripts in /utilities/encryption_utils.py are used to manage encryption/decryption of sensitive information.
+## Security & Privacy
 
-Technology Stack
+- Sensitive Data Handling: Sensitive data such as Social Security Numbers are handled using placeholder tokens, and encryption techniques are used for storage and transmission (AES-256).
 
-Programming Language: Python
+- Encryption: Custom utility scripts in /utilities/encryption_utils.py are used to manage encryption/decryption of sensitive information.
 
-NLP Tools: SpaCy, HuggingFace Transformers
+## Roadmap
 
-Web Automation: Selenium, Playwright
+Phase 1: Implement basic email_agents for email triage.
 
-Database: SQLite for local development, PostgreSQL for production use
-
-Frontend Interface: Streamlit
-
-Roadmap
-
-Phase 1: Implement basic agents for email triage and LinkedIn message handling.
-
-Phase 2: Expand contact management capabilities and integrate with WhatsApp.
+Phase 2: Contact management capabilities and integrate with WhatsApp.
 
 Phase 3: Develop and optimize calendar scheduling and personal task reminders.
 
-Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request or create an issue for any suggestions or improvements.
 
-License
+## License
 
 This project is licensed under the MIT License.
+
+Author: [Francis Brero]("https:www.linkedin.com/in/francis-brero")

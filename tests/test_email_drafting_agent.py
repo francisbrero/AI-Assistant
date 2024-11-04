@@ -3,8 +3,8 @@ import os
 import unittest
 from unittest.mock import patch
 
-# Ensure the parent directory is in the Python path to access agents
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'agents')))
+# Ensure the parent directory is in the Python path to access email_agents
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'email_agents')))
 
 from email_drafting_agent import EmailDraftingAgent
 

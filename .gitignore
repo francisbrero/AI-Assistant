@@ -165,3 +165,7 @@ cython_debug/
 credentials.json
 token.pickle
 OAI_CONFIG_LIST
+
+# customer data
+*.csv
+contact_data.json
